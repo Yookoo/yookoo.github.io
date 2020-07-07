@@ -20,6 +20,7 @@ module.exports = {
         { text: '首页', link: '/' },
         { text: '教程', link: '/guide/' },
         { text: 'rising-waves', link: 'https://yookoo.github.io/rising-waves/#/' },
+        
       ]
     },
   plugins: {
