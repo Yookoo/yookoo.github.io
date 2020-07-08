@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>maven私服配置 | Hello, Welcome to  My Blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.7412edcf.css" as="style"><link rel="preload" href="/assets/js/app.64436fc8.js" as="script"><link rel="preload" href="/assets/js/2.a6c38e86.js" as="script"><link rel="preload" href="/assets/js/27.75930e45.js" as="script"><link rel="prefetch" href="/assets/js/10.f8ae51cc.js"><link rel="prefetch" href="/assets/js/11.8e14afec.js"><link rel="prefetch" href="/assets/js/12.61537104.js"><link rel="prefetch" href="/assets/js/13.ea600b29.js"><link rel="prefetch" href="/assets/js/14.275cf7fc.js"><link rel="prefetch" href="/assets/js/15.cdb445fb.js"><link rel="prefetch" href="/assets/js/16.afab3521.js"><link rel="prefetch" href="/assets/js/17.63cd40d0.js"><link rel="prefetch" href="/assets/js/18.7112a972.js"><link rel="prefetch" href="/assets/js/19.cacfed6d.js"><link rel="prefetch" href="/assets/js/20.c61bafbd.js"><link rel="prefetch" href="/assets/js/21.1337f8be.js"><link rel="prefetch" href="/assets/js/22.d17e5764.js"><link rel="prefetch" href="/assets/js/23.3b3f4b0d.js"><link rel="prefetch" href="/assets/js/24.2f6b9b14.js"><link rel="prefetch" href="/assets/js/25.f0ea4745.js"><link rel="prefetch" href="/assets/js/26.a80ff106.js"><link rel="prefetch" href="/assets/js/28.31f96eeb.js"><link rel="prefetch" href="/assets/js/3.0f1c27ca.js"><link rel="prefetch" href="/assets/js/4.786684df.js"><link rel="prefetch" href="/assets/js/5.e372ff18.js"><link rel="prefetch" href="/assets/js/6.09648780.js"><link rel="prefetch" href="/assets/js/7.70e27ed4.js"><link rel="prefetch" href="/assets/js/8.13b38c70.js"><link rel="prefetch" href="/assets/js/9.5d6210bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7412edcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Hello, Welcome to  My Blog" class="logo"> <span class="site-name can-hide">Hello, Welcome to  My Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front/mui/" class="nav-link">
+  MUI
+</a></li><li class="dropdown-item"><!----> <a href="/front/vue/" class="nav-link">
+  VUE
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/back/mybatis/" class="nav-link">
+  Mybatis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/others/" class="nav-link router-link-active">
+  其他
+</a></div><div class="nav-item"><a href="https://yookoo.github.io/rising-waves/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  rising-waves
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  教程
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front/mui/" class="nav-link">
+  MUI
+</a></li><li class="dropdown-item"><!----> <a href="/front/vue/" class="nav-link">
+  VUE
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/back/mybatis/" class="nav-link">
+  Mybatis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><a href="/others/" class="nav-link router-link-active">
+  其他
+</a></div><div class="nav-item"><a href="https://yookoo.github.io/rising-waves/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  rising-waves
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>others</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/others/Atom使用指南.html" class="sidebar-link">Atom 使用指南</a></li><li><a href="/others/" aria-current="page" class="sidebar-link">劝学</a></li><li><a href="/others/SVN命令.html" class="sidebar-link">SVN命令</a></li><li><a href="/others/maven私服配置.html" class="active sidebar-link">maven私服配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/others/使用 Gitee 搭建 Markdown 图床.html" class="sidebar-link">使用 Gitee 搭建 Markdown 图床</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="maven私服配置"><a href="#maven私服配置" class="header-anchor">#</a> maven私服配置</h1> <h3 id="_1-下载"><a href="#_1-下载" class="header-anchor">#</a> 1.下载</h3> <ol><li>私服采用的是nexus oss 版本号为 <code>Nexus Repository Manager 3</code> 下载路径：<a href="https://www.sonatype.com/download-oss-sonatype" target="_blank" rel="noopener noreferrer">https://www.sonatype.com/download-oss-sonatype<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>下载window版本的压缩包，将压缩包放到指定目录下例:<code>D:/nexus</code></li></ol> <h3 id="_2-启动"><a href="#_2-启动" class="header-anchor">#</a> 2.启动</h3> <h4 id="_2-1直接启动"><a href="#_2-1直接启动" class="header-anchor">#</a> 2.1直接启动</h4> <p>cmd转到解压缩文件bin 目录下，输入命令 nexus.exe /run,等待项目启动完成，在浏览器中输入:<a href="http://localhost:8081" target="_blank" rel="noopener noreferrer">http://localhost:8081<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h4 id="_2-2注册成service服务"><a href="#_2-2注册成service服务" class="header-anchor">#</a> 2.2注册成service服务</h4> <ol><li>以管理员权限启动cmd，并转到解压包bin目录下，执行<code>nexus.exe /install nexus</code>注册服务</li> <li>启动服务<code>nexus.exe /start nexus</code>（注意服务启动是需要一定时间的）</li> <li>停止服务<code>nexus.exe /stop nexus</code></li> <li>卸载服务<code>nexus.exe /uninstall nexus</code></li></ol> <h3 id="_3-创建私有仓库"><a href="#_3-创建私有仓库" class="header-anchor">#</a> 3.创建私有仓库</h3> <ol><li>登录网站，<code>username:admin</code> <code>password:admin123</code></li> <li>点击create repository 并且选择maven2(proxy)</li> <li>填写仓库名<code>Name:maven-proxy</code></li> <li>远程仓库连接<code>Remote storage URL:</code> <a href="https://repo1.maven.org/maven2" target="_blank" rel="noopener noreferrer">https://repo1.maven.org/maven2<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>点击create repository即可创建新的远程仓库</li></ol> <h3 id="_4-本地maven配置"><a href="#_4-本地maven配置" class="header-anchor">#</a> 4.本地maven配置</h3> <p>配置远程仓库以及releases授权信息（用来发布到远程仓库中）</p> <div class="language- extra-class"><pre><code>&lt;settings&gt;
+ &lt;servers&gt;
+   &lt;server&gt;
+     &lt;id&gt;releases&lt;/id&gt;  
+     &lt;username&gt;admin&lt;/username&gt;  
+     &lt;password&gt;admin123&lt;/password&gt;  
+   &lt;/server&gt;
+ &lt;/servers&gt;
+  &lt;mirrors&gt;
+     &lt;mirror&gt;
+        &lt;id&gt;nexus&lt;/id&gt;
+        &lt;mirrorOf&gt;*&lt;/mirrorOf&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-proxy/&lt;/url&gt;
+     &lt;/mirror&gt;
+  &lt;/mirrors&gt;
+&lt;/settings&gt;
+</code></pre></div><p>pom.xml 对应配置--server的id与repository的id需要对应</p> <div class="language- extra-class"><pre><code>&lt;distributionManagement&gt;
+    &lt;snapshotRepository&gt;
+        &lt;id&gt;snapshots&lt;/id&gt;
+        &lt;name&gt;User Porject Snapshot&lt;/name&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-snapshots/&lt;/url&gt;;
+        &lt;uniqueVersion&gt;true&lt;/uniqueVersion&gt;
+    &lt;/snapshotRepository&gt;
+    &lt;repository&gt;
+        &lt;id&gt;releases&lt;/id&gt;
+        &lt;name&gt;User Porject Release&lt;/name&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-releases/&lt;/url&gt;;
+    &lt;/repository&gt;
+&lt;/distributionManagement&gt;
+</code></pre></div><h3 id="_5-发布项目到远程仓库"><a href="#_5-发布项目到远程仓库" class="header-anchor">#</a> 5.发布项目到远程仓库</h3> <ol><li><p>项目发布到远程仓库 <code>mvn clean deploy -X -Dmaven.test.skip=true</code></p></li> <li><p>发布指定包到远程仓库中</p> <div class="language- extra-class"><pre><code> mvn deploy:deploy-file 
+ 	-DgroupId=com.oracle 
+     -DartifactId=ojdbc14 
+     -Dversion=1.0.RELEASES
+     -Dpackaging=jar 
+     -Dfile=D:\ojdbc14.jar 
+     -Durl=http://localhost:8081/repository/maven-releases/ 
+     -DrepositoryId=maven-repository-releases
+</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/others/SVN命令.html" class="prev">
+        SVN命令
+      </a></span> <span class="next"><a href="/others/使用 Gitee 搭建 Markdown 图床.html">
+        使用 Gitee 搭建 Markdown 图床
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.64436fc8.js" defer></script><script src="/assets/js/2.a6c38e86.js" defer></script><script src="/assets/js/27.75930e45.js" defer></script>
+  </body>
+</html>
